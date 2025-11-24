@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>サンプルサイト — 2025-11-24-sunabaco</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>砂場コーディング（Sunabaco）</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <h2>ようこそ！</h2>
+      <p>Visual Studio Code で作る簡単な静的サイトのサンプルです。</p>
+      <button id="magicBtn">押してみて！</button>
+      <p id="magicMsg" class="hidden">やったね！ボタンが押されました。</p>
+    </section>
+
+    <section id="about" class="card-grid">
+      <article class="card">
+        <h3>目的</h3>
+        <p>Git + GitHub の学習用、HTML/CSS/JS の基本を試すためのページ。</p>
+      </article>
+
+      <article class="card">
+        <h3>使い方</h3>
+        <ol>
+          <li>このフォルダを VSCode で開く</li>
+          <li>Live Server などで index.html を表示</li>
+          <li>変更を Git にコミットして GitHub にプッシュ</li>
+        </ol>
+      </article>
+    </section>
+
+    <section id="contact" class="form-section">
+      <h3>簡易フォーム（動作はフロントのみ）</h3>
+      <form id="contactForm">
+        <label>
+          名前
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          メッセージ
+          <textarea name="message" required></textarea>
+        </label>
+        <button type="submit">送信</button>
+      </form>
+      <p id="formResult" class="hidden"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2025 2025-11-24-sunabaco</small>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
